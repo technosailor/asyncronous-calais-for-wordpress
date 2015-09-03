@@ -2,16 +2,18 @@
 	var AsyncCalais = {
 
 		getTags: function() {
-			var content = '';
-			if (typeof tinyMCE != 'undefined' && tinyMCE.activeEditor != null && tinyMCE.activeEditor.isHidden() == false) {
+
+			var content;
+			if ( 'undefined' !== typeof tinyMCE && null !== tinyMCE.activeEditor && false === tinyMCE.activeEditor.isHidden() ) {
 				content = tinyMCE.activeEditor.getContent();
+			} else {
+				content = $( '#content' ).text();
 			}
-			content = $('#content').text();
 
 			if( 0 === content.length ) {
 				return false;
 			}
-			console.debug(asyncCalais.ajaxurl);
+
 			$.post( asyncCalais.ajaxurl, {
 				nonce: asyncCalais.nonce,
 				action: 'get_calais_tags',
@@ -22,7 +24,7 @@
 		}
 	};
 
-	jQuery( document ).ready( function( $ ) {
+	$( document ).ready( function( $ ) {
 		AsyncCalais.getTags();
 	} );
 })(jQuery);
