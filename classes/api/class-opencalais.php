@@ -26,6 +26,7 @@ class OpenCalais {
 	public function send( $content ) {
 
 		$request = wp_remote_request( self::APIURL, array(
+			'method'            => self::METHOD,
 			'headers'           => $this->_headers,
 			'body'              => wp_kses( $content, array() )
 		) );
