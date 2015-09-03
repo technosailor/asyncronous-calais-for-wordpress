@@ -1,0 +1,26 @@
+{
+  "name": "asynchronous-calais-for-wordpress",
+  "title": "Asynchronous Calais for WordPress",
+  "version": "1.0.0",
+  "description": "Uses Thompson-Reuters OpenCalais API for automatic suggestion of tags. Utilizes the TechCrunch Asynchronous Library and takes inspiration from Dan Grossman's WP Calais Auto Tagger.",
+  "author": {
+    "name": "Aaron Brazell",
+    "email": "aaron@technosailor.com",
+    "url": "http://technosailor.com"
+  },
+  "keywords": [
+    "calais",
+    "api",
+    "tags",
+    "async"
+  ],
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-compass": "^1.0.3",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-uglify": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
