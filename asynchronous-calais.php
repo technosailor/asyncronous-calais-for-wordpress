@@ -19,3 +19,6 @@ define( 'ASYNC_CALAIS_CLASS_DIR', ASYNC_CALAIS_PATH . 'classes/' );
 require_once( ASYNC_CALAIS_CLASS_DIR . 'async/class-wp-async-task.php' );
 
 require_once( ASYNC_CALAIS_CLASS_DIR . 'api/class-opencalais.php' );
+require_once( ASYNC_CALAIS_CLASS_DIR . 'admin/class-admin.php' );
+
+add_action( 'admin_enqueue_scripts', '\\Technosailor\\Calais\\Admin\\enqueue' );

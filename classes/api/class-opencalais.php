@@ -1,6 +1,6 @@
 <?php
 
-namespace Technosailor\OpenCalais;
+namespace Technosailor\Calais\Api\OpenCalais;
 
 class OpenCalais {
 
@@ -38,9 +38,3 @@ class OpenCalais {
 		return wp_remote_retrieve_body( $request );
 	}
 }
-
-
-$api_url = esc_url_raw( sprintf( 'https://api.edgecast.com/v2/mcc/customers/%s/edge/purge', $account ) );
-$headers = array(
-
-);

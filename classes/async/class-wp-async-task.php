@@ -1,4 +1,6 @@
 <?php
+
+namespace Technosailor\Calais\Async\WP_Async_Task;
 /**
  * Plugin Name: WP Asynchronous Tasks
  * Version: 1.0
