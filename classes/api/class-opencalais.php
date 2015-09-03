@@ -1,6 +1,6 @@
 <?php
 
-namespace Technosailor\Calais\Api\OpenCalais;
+namespace Technosailor\Calais\Api;
 
 class OpenCalais {
 

@@ -17,6 +17,7 @@ define( 'ASYNC_CALAIS_BASENAME', plugin_basename( __FILE__ ) );
 define( 'ASYNC_CALAIS_CLASS_DIR', ASYNC_CALAIS_PATH . 'classes/' );
 
 require_once( ASYNC_CALAIS_CLASS_DIR . 'async/class-wp-async-task.php' );
+require_once( ASYNC_CALAIS_CLASS_DIR . 'async/class-ajax-handlers.php' );
 
 require_once( ASYNC_CALAIS_CLASS_DIR . 'api/class-opencalais.php' );
 require_once( ASYNC_CALAIS_CLASS_DIR . 'admin/class-admin.php' );
